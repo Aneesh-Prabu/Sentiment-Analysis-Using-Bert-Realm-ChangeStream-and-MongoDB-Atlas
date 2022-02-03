@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dvt-de-Dv6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Peerstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="mongodb" translatesAutoresizingMaskIntoConstraints="NO" id="az2-Zf-hnX">
+                                <rect key="frame" x="130" y="648.5" width="155" height="55.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peerislands" translatesAutoresizingMaskIntoConstraints="NO" id="KUu-72-SVs">
+                                <rect key="frame" x="103" y="111" width="208" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OPf-bD-cQk"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Peerstagram (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Cfp-vT-QX0">
+                                <rect key="frame" x="20" y="159" width="374" height="424"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="424" id="2Fb-nW-Hj9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYP-k5-uAM">
+                                <rect key="frame" x="120" y="729" width="175" height="54"/>
+                                <color key="backgroundColor" red="0.90585678820000004" green="0.90201061959999995" blue="0.89803880449999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="BK5-Z6-4KD"/>
+                                    <constraint firstAttribute="height" constant="54" id="yuX-q2-AQS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.028044203300000001" green="0.1168399081" blue="0.1647133231" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signupPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPD-Gg-Mks"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orF-JI-wKF">
+                                <rect key="frame" x="133" y="600" width="148" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KUu-72-SVs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="9fU-qa-D4c"/>
+                            <constraint firstItem="KUu-72-SVs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="DiP-NA-zfu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="az2-Zf-hnX" secondAttribute="trailing" constant="129" id="ECJ-29-Uda"/>
+                            <constraint firstItem="Cfp-vT-QX0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FBe-EM-SCB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OYP-k5-uAM" secondAttribute="trailing" constant="119" id="HZK-uY-HVb"/>
+                            <constraint firstItem="orF-JI-wKF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="MfM-h1-5rK"/>
+                            <constraint firstItem="az2-Zf-hnX" firstAttribute="top" secondItem="orF-JI-wKF" secondAttribute="bottom" constant="28" id="Phm-rt-exl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cfp-vT-QX0" secondAttribute="trailing" constant="20" id="WUJ-oq-As8"/>
+                            <constraint firstItem="OYP-k5-uAM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="cDG-iZ-ldv"/>
+                            <constraint firstItem="OYP-k5-uAM" firstAttribute="top" secondItem="az2-Zf-hnX" secondAttribute="bottom" constant="25" id="cPJ-r5-4vB"/>
+                            <constraint firstItem="orF-JI-wKF" firstAttribute="top" secondItem="Cfp-vT-QX0" secondAttribute="bottom" constant="17" id="h2a-j5-FXU"/>
+                            <constraint firstItem="az2-Zf-hnX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="jes-Gk-Up3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUu-72-SVs" secondAttribute="trailing" constant="103" id="mAl-gJ-yxr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OYP-k5-uAM" secondAttribute="bottom" constant="79" id="reh-th-m3C"/>
+                            <constraint firstItem="Cfp-vT-QX0" firstAttribute="top" secondItem="KUu-72-SVs" secondAttribute="bottom" constant="8" symbolic="YES" id="wNF-U2-xd9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="orF-JI-wKF" secondAttribute="trailing" constant="133" id="wqN-Ym-ETT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OMI-8z-AnN"/>
+                    <connections>
+                        <outlet property="signupBtn" destination="OYP-k5-uAM" id="nXf-4Y-LRa"/>
+                        <segue destination="B7w-En-iTa" kind="presentation" identifier="goToMovies" modalPresentationStyle="fullScreen" id="8zY-5m-nc4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249.2753623188407" y="198.21428571428569"/>
+        </scene>
+        <!--Movies View Controller-->
+        <scene sceneID="2v0-zE-vN8">
+            <objects>
+                <viewController id="B7w-En-iTa" customClass="MoviesViewController" customModule="Peerstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AC6-iD-kb5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="fAi-xd-qtc">
+                                <rect key="frame" x="20" y="159" width="374" height="351"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Gj6-dM-eXE"/>
+                                    <constraint firstAttribute="height" constant="351" id="YSR-cp-WDA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Co6-X5-OnG">
+                                <rect key="frame" x="120" y="576" width="175" height="54"/>
+                                <color key="backgroundColor" red="0.90585678820000004" green="0.90201061959999995" blue="0.89803880449999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Emj-UB-9Nt"/>
+                                    <constraint firstAttribute="width" constant="175" id="W6q-aq-oT0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Review Movie">
+                                    <color key="titleColor" red="0.028044203300000001" green="0.1168399081" blue="0.1647133231" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reviewBtnPressed:" destination="B7w-En-iTa" eventType="touchUpInside" id="Cwl-e8-YYv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sLZ-Ja-Yu5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sLZ-Ja-Yu5" firstAttribute="trailing" secondItem="Co6-X5-OnG" secondAttribute="trailing" constant="119" id="3yj-Bu-Juj"/>
+                            <constraint firstItem="fAi-xd-qtc" firstAttribute="top" secondItem="sLZ-Ja-Yu5" secondAttribute="top" constant="115" id="FNH-M6-f7Q"/>
+                            <constraint firstItem="fAi-xd-qtc" firstAttribute="leading" secondItem="sLZ-Ja-Yu5" secondAttribute="leading" constant="20" id="O6A-g7-Kjt"/>
+                            <constraint firstItem="Co6-X5-OnG" firstAttribute="top" secondItem="fAi-xd-qtc" secondAttribute="bottom" constant="66" id="hjR-db-0dy"/>
+                            <constraint firstItem="sLZ-Ja-Yu5" firstAttribute="bottom" secondItem="Co6-X5-OnG" secondAttribute="bottom" constant="232" id="mIu-Ql-UyA"/>
+                            <constraint firstItem="Co6-X5-OnG" firstAttribute="leading" secondItem="sLZ-Ja-Yu5" secondAttribute="leading" constant="120" id="seQ-2c-dbb"/>
+                            <constraint firstItem="sLZ-Ja-Yu5" firstAttribute="trailing" secondItem="fAi-xd-qtc" secondAttribute="trailing" constant="20" id="vZd-bg-RxE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ylk-Gz-iWE"/>
+                    <connections>
+                        <outlet property="reviewBtn" destination="Co6-X5-OnG" id="Lap-zY-Ytk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dD-Co-MAk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995.6521739130437" y="197.54464285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sod-X1-0Vj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dvt-de-Dv6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Klt-mb-DkT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7ol-I6-pOi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1IG-ud-LmG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-523" y="198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2" width="500" height="500"/>
+        <image name="Peerstagram (1)" width="500" height="500"/>
+        <image name="mongodb" width="1102" height="278"/>
+        <image name="peerislands" width="1146" height="473"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
