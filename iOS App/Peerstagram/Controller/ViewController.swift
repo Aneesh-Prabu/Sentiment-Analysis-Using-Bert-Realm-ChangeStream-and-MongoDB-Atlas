@@ -48,7 +48,7 @@ class ViewController: UIViewController {
                 if id != "" {
                     
                     // Get app id for MongoDB Realm
-                    let app = App(id: "sentimentanalysis-csvwj")
+                    let app = App(id: "") // Insert your app ID here
                     
                     // Creating anonymous Login
                     let anonymousCredentials = Credentials.anonymous
