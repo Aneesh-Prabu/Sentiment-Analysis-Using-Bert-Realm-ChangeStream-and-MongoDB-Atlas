@@ -66,7 +66,7 @@ def changeStreamWatcher(
 if __name__ == "__main__":
     username = "" # Enter username
     password = "" # Enter password
-    uri = f"mongodb+srv://{username}:{password}@cluster0.2sabu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    uri = f"mongodb+srv://{username}:{password}@" # Insert MongoDB URI
     DATABASE = "Sentiment"
     COLLECTION = "Movie"
     
