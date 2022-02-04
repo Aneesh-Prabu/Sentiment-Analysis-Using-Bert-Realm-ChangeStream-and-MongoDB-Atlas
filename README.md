@@ -145,3 +145,16 @@ Results from the saved model:
 'The movie was okish.' : 0.73089343
 'The movie was terrible...' : 0.18032452
  ```
+
+ ## iOS Application
+
+The iOS app is very simple and is only a place holder. This app can be substituted with any application that can collect user data for sentiment analysis.
+
+ ### Home Screen
+ ![Home Screen](./images/login.png)
+
+ ### Login
+ ![Home Screen](./images/enter-name.png)
+
+ ### Movie Review
+ ![Home Screen](./images/review.png)
