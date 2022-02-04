@@ -154,7 +154,19 @@ The iOS app is very simple and is only a place holder. This app can be substitut
  ![Home Screen](./images/login.png)
 
  ### Login
- ![Home Screen](./images/enter-name.png)
+ ![Login](./images/enter-name.png)
 
  ### Movie Review
- ![Home Screen](./images/review.png)
+ ![Review](./images/review.png)
+
+ ### Realm Sync
+
+ Realm Sync works both ways. If there is a change in the local DB it will be synced with cloud DB, and if there is a change in the cloud DB it will be synched in the local DB
+
+ Here is an example of how local DB is updated with the Sentiment Score given by our sentiment analysis change stream which is on the cloud.
+
+ #### Local DB
+ ![Realm Sync 1](./images/2-way-sync.png)
+
+ #### Local DB with Atlas side by side
+ ![Realm Sync 2](./images/2-way-sync-1.png)
