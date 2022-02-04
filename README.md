@@ -126,10 +126,6 @@ Epoch 3/3
 26215/26215 [==============================] - 3548s 135ms/step - loss: 2.2297 - mean_squared_error: 2.1732 - val_loss: 2.2410 - val_mean_squared_error: 2.1846
 ```
 
-## Performance of model
-
-![Performance Graph](./images/output.png)
-
 ## Atlas Cluster
 ### Dataset to train BERT + EDGE Model
 ![Atlas Sentiment 16m](./images/sentiment-16m-atlas.png)
